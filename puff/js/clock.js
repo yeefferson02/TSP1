@@ -13,11 +13,11 @@ if(nmin <= 9) {nmin = "0" +nmin;}
 if(nsec <= 9) {nsec = "0" +nsec;}
 
 
-document.getElementById('clockbox').innerHTML="<img src='../Images/clock/c"+Math.floor(nhour / 10)+".gif'>"+
-											  "</img><img src='../Images/clock/c"+Math.floor(nhour % 10)+".gif'><img src='../Images/clock/colon.gif'></img>"+
-											  "</img><img src='../Images/clock/c"+Math.floor(nmin / 10)+".gif'></img>"+
-											  "<img src='../Images/clock/c"+Math.floor(nmin % 10)+".gif'>"+
-											  "<img src='../Images/clock/"+ap+".gif'>"+"";
+document.getElementById('clockbox').innerHTML="<img src='../images/clock/c"+Math.floor(nhour / 10)+".gif'>"+
+											  "</img><img src='../images/clock/c"+Math.floor(nhour % 10)+".gif'><img src='../images/clock/colon.gif'></img>"+
+											  "</img><img src='../images/clock/c"+Math.floor(nmin / 10)+".gif'></img>"+
+											  "<img src='../images/clock/c"+Math.floor(nmin % 10)+".gif'>"+
+											  "<img src='../images/clock/"+ap+".gif'>"+"";
 setTimeout("GetClock()", 1000);
 }
 

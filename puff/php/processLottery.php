@@ -1,6 +1,6 @@
 <?php
 session_start();
-error_reporting(0);
+//error_reporting(0);
 require('connection_open.php');
 require('phpLibrary.php');
 date_default_timezone_set('US/Pacific'); 
@@ -18,8 +18,8 @@ $getBetCount = mysql_num_rows($getBetCount);
 
 if($getBetCount < 3)
 {
-	$update_lottery = mysql_query("INSERT INTO lottery_bets(account_id, char_id,number_combination,bet) VALUES($acc_id,$mainChar,$combi,$bet)") or die(mysql_error());
-	$deduct_zeny = mysql_query("UPDATE `char` SET zeny = zeny - $bet where char_id = $mainChar AND account_id=$acc_id") or die(mysql_error());
+	$update_lottery = mysql_query("INSERT INTO lottery_bets(account_id, char_id,number_combination,bet) VALUES($acc_id,$mainChar,$combi,$bet)");
+	$deduct_zeny = mysql_query("UPDATE `char` SET zeny = zeny - $bet where char_id = $mainChar AND account_id=$acc_id");
 	if($update_lottery && $deduct_zeny)
 	{
 		echo "ok";

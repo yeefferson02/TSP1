@@ -3,6 +3,7 @@
 	error_reporting(0);
 	
 	$username = $_SESSION['username'];
+	$acc_id = $_SESSION['accountID'];
 	include("../../php/connection_open.php");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -15,16 +16,15 @@
 		<link rel="stylesheet" type="text/css" href="../../css/960.css"/>
 		<link rel="stylesheet" type="text/css" href="../../css/custom.css"/>
 	
-		<link rel="stylesheet" type="text/css" href="../../css/smoothness/jquery-ui-1.8.18.custom.css"/>
-		<link rel="stylesheet" type="text/css" href="../../jqueryui/css/lightness/jquery-ui-1.8.19.custom.css"/>
+	
+		<link rel="stylesheet" type="text/css" href="../../css/lightness/jquery-ui-1.8.19.custom.css"/>
 		
-		<script type="text/javascript" src="../../js/jquery171.js"></script>
-		<script type="text/javascript" src="../../js/jqueryui.js"></script>
+		<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui-1.8.19.custom.min.js"></script>
 		<script type="text/javascript" src="../../js/mainscript.js"></script>
 		<script type="text/javascript" src="../../js/clock.js"></script>
 		<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
-		<script type="text/javascript" src="../../jqueryui/js/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="../../jqueryui/js/jquery-ui-1.8.19.custom.min.js"></script>
+		
 		
 		<script>
 		$(function() {
@@ -36,7 +36,7 @@
 		</script>
 		
 		<style>
-		#tabs { height: 260px; box-shadow:0px 0px 20px #000; border:thin solid #F6B344;} 
+		#tabs { height: 260px; } 
 		.tabs-bottom { position: relative; } 
 		.tabs-bottom .ui-tabs-panel { height: 195px; overflow: auto; } 
 		.tabs-bottom .ui-tabs-nav { position: absolute !important; left: 0; bottom: 0; right:0; padding: 0 0.2em 0.2em 0; height:33px; } 
@@ -250,7 +250,7 @@
 						}
 					?>
 					
-					<div class="grid_6" id="clockbox" style="margin-top: 20px; height:50px; background-image:url('../images/clock/clockHolder.png'); margin-left:0px;" title="In-Game Time. GMT+8:00">
+					<div class="grid_6" id="clockbox" style="margin-top: 20px; height:50px; background-color:white; margin-left:0px;" title="Server/In-Game Time. GMT+8:00">
 					
 					</div>
 					
@@ -345,8 +345,42 @@
 								<p align="justify" style="color:black;">
 									The lottery system will generate the winning 3 digit combination every 6 Hours. For instructions, click Here.
 									<br><br>
-									Place Bet
+									<?php if($acc_id != "")
+										  {?>	
+												<button id="lottery" style="color:orange;cursor:pointer;background:transparent;border:0px;padding:0">Click Here</button>to Place your Bet
+									<?php }
+										  else
+										  {?>
+										  
+												Please <span id="login_first_lottery" style="color:orange;cursor:pointer"><u>Login</u></span> first before placing your bet!
+									<?php		
+										  } 
+									?>
 								</p>
+								
+								<div id="placeBet" style="display:none" title="Place your Bets!" >
+								<i>Note: Combination is only numbers 1-10</i>
+								<br/>
+									Choose your Numbers: <input type="text" id="num1" style="width:23px" maxlength="2"/>
+									&nbsp;
+									<input type="text" id="num2" style="width:23px"  maxlength="2"/>
+									&nbsp;
+									<input type="text" id="num3" style="width:23px"  maxlength="2"/>
+									<button id="random" style="color:orange;cursor:pointer;background:transparent;border:0px;"> Random? </button>
+									<br/>
+									Choose your Main Character: 
+									<select  id="characters">
+										<?php
+												while($row = mysql_fetch_array($retrieveCharacter ))
+												{?>
+													<option value="<?php echo $row[0]?>"><?php echo $row[1]?></option>
+										<?php	}
+										?>
+									</select>
+									<br/>
+									Place Your Bet: 
+									<input type="text" id="bet" style="width:100px"/> <span id="bet_error" style="color:red;"></span>
+								</div>
 							</div>
 						</div>
 					</div>

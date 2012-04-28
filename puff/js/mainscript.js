@@ -82,7 +82,7 @@ $('.lottery').load('lottery.php');
 					text: "Cancel",
 					click: function() { 
 							$(this).dialog("close"); 
-							docuemnt.location.href = 'index.php';
+							//document.location.href = 'index.php';
 							
 						}
 					},

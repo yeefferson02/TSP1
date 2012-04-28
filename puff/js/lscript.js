@@ -130,13 +130,13 @@ $(document).ready(function(){
 								type:'post',
 								url: '../../php/processLottery.php',
 								data: {num1:$("#num1").val(),num2:$("#num2").val(),num3:$("#num3").val(),bet:$("#bet").val(),mainChar:$("#characters").val()},
-								success: function(numbers){						
+								success: function(data){						
 										//alert(numbers);
-										if(numbers == 501)
+										if(data == 501)
 										{
 											alert("Something went Wrong!");
 										}
-										else if(numbers == 502)
+										else if(data == 502)
 										{
 											alert("Allowed only 3 times!");
 										}

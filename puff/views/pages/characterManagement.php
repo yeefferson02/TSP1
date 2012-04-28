@@ -8,8 +8,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<script type="text/javascript" src="../../js/rscript.js"></script>
-		
+		<script type="text/javascript" src="../../js/charscript.js"></script>
 	</head>
 
 	<body>
@@ -234,7 +233,7 @@
 									
 									<td>
 										
-										reset
+										<button id="reset_chracter" title="Reset your Character" style="color:orange;cursor:pointer;background:transparent;border:0">Reset</button>
 										
 									</td>
 								</tr>
@@ -247,6 +246,10 @@
 				<br>
 				<br>
 			</div>
+		</div>
+		<div id="reset_panel" title="Reset Panel">
+			<button id="reset_all">Reset All</button>
+			<button id="reset_manually">Reset Manually</button>		
 		</div>
 	</body>
 </html>

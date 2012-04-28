@@ -1,7 +1,7 @@
 <?php
-$db_name="puff";
+$db_name="ragnarok";
 $db_user="root";
-$db_pass="";
+$db_pass="sample";
 $local = "localhost";
 
 $connect = mysql_connect($local,$db_user,$db_pass) 

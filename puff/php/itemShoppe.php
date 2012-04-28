@@ -3,11 +3,12 @@ session_start();
 error_reporting(0);
 require('connection_open.php');
 require('phpLibrary.php');
+date_default_timezone_set('US/Pacific'); 
 $id = $_POST['id'];
 $amount = $_POST['amount'];
 $acc_id = $_SESSION['accountID'];
 $time = time();
-$dateToday = date("l, F d, Y, g:i a",$time);
+$dateToday = date("l, F d, Y, g:i A",$time);
 $getItemInfo = mysql_query("SELECT itemshoppe_item_id,shoppe,price,name,itemshoppe_id from itemshoppe where itemshoppe_id=$id") or die(mysql_error());
 $getItemInfo = mysql_fetch_array($getItemInfo);
 
@@ -57,13 +58,6 @@ $total = $getItemInfo[2] * $amount;
 			{
 				$oneDay = $time + (24*60*60);
 				$makePremium = mysql_query("UPDATE login set premium = 1, premium_expiry = $expiry, group_id = 1 where account_id = $acc_id");
-				//make characters premium status
-				$getCharId = mysql_query("SELECT char_id from `char` where account_id = $acc_id");
-					while($row = mysql_fetch_array($getCharId))
-					{
-						$makeCharPremium = mysql_query("INSERT into global_reg_value(char_id,str,value,type,account_id) VALUES($row[0],'premdaily',$oneDay,3,0)");
-					}
-					
 				$deductRewardPoints = mysql_query("UPDATE login SET credits = credits - $total where account_id = $acc_id");
 				$reduceStocks = mysql_query("UPDATE itemshoppe set stock = stock - $amount where itemshoppe_id=$id");
 				echo "[Credits]Thank you for Purchasing! ^_^";

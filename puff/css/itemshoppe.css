@@ -5,14 +5,14 @@ a:active {text-decoration:none; color:black;}
 
 body
 {
-	background-image:url('../views/images/itemshoppe/stripe.jpg');
+	background-image:url('../views/images/ItemShoppe/stripe.jpg');
 	background-repeat:repeat-x;
 }
 
 .iGlobalContainer
 {
 	box-shadow:0px 0px 12px #000;
-	background-image:url('../views/images/itemshoppe/noisebg.jpg');
+	background-image:url('../views/images/ItemShoppe/noiseBG.jpg');
 	border-radius:15px;
 	border:10px inset #000;
 	opacity:0.8;
@@ -23,7 +23,7 @@ body
 	height:230px;
 	margin:0px;
 	margin-top:35px;
-	background-image:url('../views/images/itemshoppe/logo.png');
+	background-image:url('../views/images/ItemShoppe/logo.png');
 	
 }
 
@@ -41,7 +41,7 @@ body
 	min-height:125px;
 	margin:0px;
 	margin-bottom:0px;
-	background-image:url('../views/images/itemshoppe/header.png');
+	background-image:url('../views/images/ItemShoppe/header.png');
 }
 
 .returnButton

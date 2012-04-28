@@ -1,0 +1,49 @@
+***gtop***
+username: puffro
+password: puffsicle
+
+<!-- Begin Gtop100 voting code --><br />
+<a href="http://www.gtop100.com/in.php?site=70653" title="Top 100 Ragnarok Online sites" target="_blank">
+<img src="http://www.gtop100.com/images/votebutton.jpg" border="0" alt="Top 100 Ragnarok Online sites"></a>
+<!-- End Gtop100s voting code -->
+
+***xtreme***
+siteID: 1132332527
+username: puffro
+password: puffsicle
+
+<!-- Begin XtremeTop100 code -->
+<a href="http://www.xtremetop100.com/in.php?site=1132332527">
+<img src="http://www.xtremeTop100.com/votenew.jpg" border="0" alt="Ragnarok Online Private Server">
+<!-- End XtremeTop100 code -->
+
+***gamesites***
+siteID: 25672
+username: puffro
+password: puffsicle
+
+<!--Begin GameSites200 Vote-->
+<p><a href="http://www.gamesites200.com/ragnarok/in.php?id=25672"><img src="http://www.gamesites200.com/ragnarok/vote.gif" alt="Vote on the Ragnarok Online Top 200" border="0">
+</a><br><a href="http://www.gamesites200.com/ragnarok/"><img src="http://www.gamesites200.com/track.gif" alt="Ragnarok Online Top 200 - RO Private Servers, Downloads, and More!" border="0"></a></p>
+<!--End Game Sites 200 Code-->
+
+***toparena**
+username: puffro
+password: puffsicle
+<!--- Start of Ragnarok Online Top 100 Code --->
+
+<a href="http://www.top100arena.com/ro/" title="ragnarok servers"><img src="http://www.top100arena.com/hit.asp?id=76429&c=RO&t=2" title="ragnarok servers" alt="ragnarok servers" width="88" height="56" border="0"></a>
+
+<!--- End of Ragnarok Online Top 100 Code --->
+
+
+***ultimateserver**
+username: puffro
+password: puffsicle
+
+<!-- Vote Code -->
+<div style="width: 90px; height: 60;"><a href="http://www.ultimateprivateservers.com/ragnarok-online/index.php?do=votes&id=197"><img border="0" src="http://www.ultimateprivateservers.com/button2.png" alt="Ragnarok Online top 200" /></a>
+<div id="abgi" style="left: 0px; position: relative; top: 0px; font-size: 0px; margin-top: -35px; padding: 0px">
+<p align="center"><a target="_blank" style="color:#0000ff; cursor: hand; font-family: Sans-serif; font-size:8px;" href="http://www.ultimateprivateservers.com/ragnarok-online/">
+<font color="#FFFFFF">Ragnarok Online Server</font></span></a></div><!-- /Vote Code -->
+

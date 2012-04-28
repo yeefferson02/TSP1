@@ -192,11 +192,23 @@
                   <input type="password" id="confirm_new_password"/>
                 </div></td>
               </tr>
+			  <tr>
+                <td colspan="2"><div align="right"> <button id="reset_pass_fields" title="Reset all Fields" style="color:orange;cursor:pointer;background:transparent;border:0">Reset?</button> </div></td>
+			  </tr>
+			  <tr>
+					<td colspan="2">
+							<div align="center"> 
+								<span id="match_error" style="color:red;">&nbsp;</span>
+								<span id="pass_str">&nbsp;</span>
+							</div>
+					</td>
+			  </tr>
             </table>
 
 	</div>
     <div id="changeEmail" align="center" title="Change Email" style="display:none;"> 
-        <table width="247" border="0" cellpadding="0" cellspacing="0">
+		
+		<table width="247" border="0" cellpadding="0" cellspacing="0">
             <tr>
                 <th width="100" scope="row"><div align="left">Old Email:</div></th>
                 <td width="159"><input type="text" id="old_email"/></td>
@@ -205,7 +217,19 @@
                 <th scope="row"><div align="left">New Email:</div></th>
                 <td><input type="text" id="new_email"/></td>
             </tr>
+			<tr>
+                <td colspan="2"><div align="right"> <button id="reset" title="Reset all Fields" style="color:orange;cursor:pointer;background:transparent;border:0">Reset?</button> </div></td>
+            </tr>
+			<tr>
+                <td colspan="2">
+						<div align="center"> 
+							<span id="old_email_error" style="color:red;">&nbsp;</span>
+							<span id="new_email_error" style="color:red;">&nbsp;</span>
+						</div>
+				</td>
+            </tr>
         </table>
+		
 	</div>
 	</body>
 </html>

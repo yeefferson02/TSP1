@@ -15,15 +15,15 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		
-		<link rel="stylesheet" type="text/css" href="../../../CSS/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="../../../CSS/text.css"/>
-		<link rel="stylesheet" type="text/css" href="../../../CSS/960.css"/>
-		<link rel="stylesheet" type="text/css" href="../../../CSS/custom.css"/>
-		<link rel="stylesheet" type="text/css" href="../../../CSS/itemshoppe.css"/>
-		<link rel="stylesheet" type="text/css" href="../../../CSS/font/customfont.css" charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/text.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/960.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/custom.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/itemshoppe.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/font/customfont.css" charset="utf-8" />
 		
 		
-		<script type="text/javascript" src="../../../js/jquery171.js"></script>
+		<script type="text/javascript" src="../../../js/jquery-1.7.2.min.js"></script>
 		<script type="text/javascript" src="../../../js/itemshoppe.js"></script>
 		<title>Puff RO Item Shoppe</title>
 	</head>
